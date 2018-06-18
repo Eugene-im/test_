@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,21 +13,104 @@
         <div class="wrap">
             <header>
                 <div class="content">
-                    text
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                        <div class="logo_text">Talk to people artificial language</div>
+                    </div>
+                    <div class="action_form">
+                        <nav>
+                            <li id="reg_b">Join us</li>
+                            <li id="sig_b">Sign in</li>
+                        </nav>
+                        <form id="reg" action="">
+                            <input type="text" id="name" placeholder="Name">
+                            <input type="e-mail" id="e-mail" placeholder="E-mail">
+                            <input type="password" id="password" placeholder="Password">
+                            <label for="code">If you’re joining an existing conversation, enter the conversation code</label>
+                            <input type="text" id="code" placeholder="Code">
+                            <button>Register now</button>
+                        </form>
+                        <form id="sig" class="hidden" action="">
+                            <input type="text" id="name" placeholder="Name">
+                            <input type="e-mail" id="e-mail" placeholder="E-mail">
+                            <input type="password" id="password" placeholder="Password">
+                            <label for="code">If you’re joining an existing conversation, enter the conversation code</label>
+                            <input type="text" id="code" placeholder="Code">
+                            <button>Register now</button>
+                        </form>
+                    </div>
                 </div>
             </header>
             <main>
                 <div class="content">
-                    text
+                    <h1>
+                        What is Elinguage?
+                    </h1>
+                    <div class="block_1">
+                        <div class="block_1__text">
+                            Web platform for communication using different artificial languages. New idea for your and your friends fun. Enjoy yor conversation!
+                        </div>
+                    </div>
+                    <h2>
+                        How it works?
+                    </h2>
+                    <div class="block_2">
+                        <div class="block_2__item it1">
+                            <div class="item__img"></div>
+                            <h3>Start</h3>
+                            <div class="item__text">
+                                <p> Register or sign in</p>
+                            </div>
+                        </div>
+                        <div class="block_2__item it2">
+                            <div class="item__img"></div>
+                            <h3>Translate</h3>
+                            <div class="item__text">
+                                <p> Write word or expression,</p>
+                                <p>choose the language</p>
+                                <p> and translate</p>
+                            </div>
+                        </div>
+                        <div class="block_2__item it3">
+                            <div class="item__img"></div>
+                            <h3>Share</h3>
+                            <div class="item__text">
+                                <p>Share the five-letter</p>
+                                <p> conversation code with other</p>
+                                <p> members, who can use it to join</p>
+                                <p> your group.</p>
+                            </div>
+                        </div>
+                        <div class="block_2__item it4">
+                            <div class="item__img"></div>
+                            <h3>Create</h3>
+                            <div class="item__text">
+                                <p>Create your own language!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
         <footer>
             <div class="content">
-                text
+                <div class="logo_footer">
+                    <a href="#">
+                        <img src="./img/logo-copy.png" alt="">
+                    </a>
+                </div>
+                <div class="footer__contact">
+                    <div class="contact__line"></div>
+                    <span>Connect with us</span>
+                    <div class="contact__line"></div>
+                    <a href="mail:support@elinguage.com">support@elinguage.com</a>
+                </div>
             </div>
         </footer>
     </div>
 </body>
+<script src="./js/main.js"></script>
 
 </html>
