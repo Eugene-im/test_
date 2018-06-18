@@ -270,7 +270,8 @@ footer {
 
 .footer__contact {
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 10px; }
   .footer__contact .contact__line {
     height: 4px;
     width: 100%;
@@ -292,6 +293,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+
+  .block_1 {
+    text-align: center; }
 
   .block_2__item {
     margin-bottom: 50px; }
