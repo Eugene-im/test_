@@ -52,12 +52,11 @@ html, body {
     line-height: 1;
 	height: 100%;
 	color:#333;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
-//   height: 100%;
 }
 .wrap {
   flex: 1 0 auto;

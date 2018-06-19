@@ -9,31 +9,31 @@ footer {
   padding-top: 0;
   position: relative;
 }
-main .content{
-	justify-content: space-evenly;
+main .content {
+  justify-content: space-evenly;
 }
 
 #progress {
   position: fixed;
   bottom: 0;
   height: 4px;
-//   width: 100%;
+  //   width: 100%;
   z-index: 8;
   background-color: #333333;
 }
 
-.pseudo-scroll{
-	margin-top: -100vh
-  }
-  
-  .class-33{
-	  width: 33%;
-  }
-  .class-67{
-	width: 67%;
+.pseudo-scroll {
+  margin-top: -100vh;
 }
-.class-100{
-	width: 100%;
+
+.class-33 {
+  width: 33%;
+}
+.class-67 {
+  width: 67%;
+}
+.class-100 {
+  width: 100%;
 }
 @keyframes ani-mouse {
   0% {
@@ -66,15 +66,13 @@ main .content{
   line-height: 18px;
   font-size: 13px;
   font-weight: normal;
-  color: #7f8c8d;
-  color: #ffffff;
-//   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
   letter-spacing: 2px;
 }
 .scroll-btn > *:hover,
 .scroll-btn > *:focus,
 .scroll-btn > *.active {
-  color: #ffffff;
+  color: #333;
 }
 .scroll-btn > *:hover,
 .scroll-btn > *:focus,
@@ -92,7 +90,7 @@ main .content{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: 3px solid white;
+  border: 3px solid #333;
   border-radius: 23px;
 }
 .scroll-btn .mouse > * {
@@ -103,12 +101,26 @@ main .content{
   width: 8px;
   height: 8px;
   margin: -4px 0 0 -4px;
-  background: white;
+  background: #333;
   border-radius: 50%;
   -webkit-animation: ani-mouse 2.5s linear infinite;
   -moz-animation: ani-mouse 2.5s linear infinite;
-  animation: ani-mouse 2.5s linear infinite;
+  animation: ani-mouse 2.5s linear reverse infinite;
 }
+// main .scroll-btn {
+//   > *,
+//   > *:hover,
+//   > *:focus,
+//   > *.active {
+//     color: #333;
+//   }
+//   .mouse{
+// 	border: 3px solid #333;
+// 	> *{
+// 		background: #333;
+// 	}	  
+//   }
+// }
 
 .fade {
   animation: opac 0.8s 1;
