@@ -9,7 +9,7 @@ function click() {
   var sig = document.getElementById("sig");
 
   a.setAttribute("class", "fade");
-  setTimeout(a.setAttribute("class", "hidden"), 800);
+  setTimeout(a.setAttribute("class", "hidden"), 1000);
 
   sig_button.onclick = function() {
     reg.removeAttribute("class", "hidden");
@@ -20,6 +20,11 @@ function click() {
     sig.removeAttribute("class", "hidden");
   };
 }
+if ($(document).width() >= 800) {
+  $(".hidden_pc").remove();
+} else {
+  $(".hidden_mob").remove();
+}
 
 $(".wrap").slick({
   vertical: true,
@@ -29,11 +34,11 @@ $(".wrap").slick({
   nextArrow:
     '<span class="scroll-btn">\
     <a href="#">\
-        <span class="mouse">\
-            <span>\
-            </span>\
-        </span>\
-        <p>drag me</p>\
+    <span class="mouse">\
+    <span>\
+    </span>\
+    </span>\
+    <p>drag me</p>\
     </a>\
-</span>'
+    </span>'
 });

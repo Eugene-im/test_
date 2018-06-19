@@ -1,0 +1,46 @@
+@media (max-width: 800px) {
+  .content,
+  .block_2 {
+    flex-direction: column;
+  }
+  .block_1 {
+    text-align: center;
+  }
+  .block_2__item {
+    margin-bottom: 50px;
+  }
+  main .content {
+    padding: 50px 15px 0;
+  }
+  main.hidden_pc .content {
+    padding: 0px 15px;
+  }
+  .logo_footer {
+    margin: 10px auto 20px;
+  }
+  .hidden_mob {
+    display: none !important;
+  }
+  .hidden_pc {
+    display: block;
+  }
+  .logo,
+  .action_form,
+  .block_1,
+  .block_2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  header {
+    max-height: 200vh;
+    .content {
+      padding-top: 0;
+    }
+  }
+  footer .content{
+      justify-content: space-around;
+  }
+}

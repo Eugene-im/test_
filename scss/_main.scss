@@ -189,21 +189,9 @@ footer {
 .hidden {
   display: none;
 }
-@media (max-width: 800px){
-	.content, .block_2{
-		flex-direction: column;
-	}
-	.block_1{
-		text-align: center;
-	}
-	.block_2__item{
-		margin-bottom: 50px;
-	}
-	main .content {
-		padding: 50px 15px 0;
-	}
-	.logo_footer{
-		margin: 10px auto 20px
-  }
-  
+.hidden_mob{
+  display: block;
+}
+.hidden_pc{
+  display: none;
 }
