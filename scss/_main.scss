@@ -125,11 +125,13 @@ main .content {
 .block_1__text {
   line-height: 24px;
 }
-.block_2 {
+.block_2{
+  margin-top: 55px; 
+  width: 100%;   
+}
+.block_2__items {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  margin-top: 55px;
 }
 .item__img {
   width: 77px;
@@ -202,5 +204,6 @@ footer {
 	}
 	.logo_footer{
 		margin: 10px auto 20px
-	}
+  }
+  
 }
