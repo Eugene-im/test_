@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Elinguage - talk to piople artificial lenguage</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
-    <div id="cssload">
+    <!-- <div id="cssload">
         <div class="cssload-container">
             <div class="cssload-cube">
                 <div class="cssload-half1">
@@ -25,10 +24,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div id="wr" class="wrapper">
         <div class="wrap">
             <header>
+                <video autoplay="true">
+                    <source src="./src/download3.mp4" type="video/mp4">
+                </video>
                 <div class="content">
                     <div class="logo">
                         <a href="#">
@@ -206,6 +208,8 @@
                             <img src="./img/logo-copy.png" alt="">
                         </a>
                     </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d853.8344915591729!2d28.467937106474686!3d49.233080883869235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b65195a6489%3A0xcbd4e159eedd74fe!2z0JLRltC90L3QuNGG0Y8sINCS0ZbQvdC90LjRhtGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMjEwMDA!5e1!3m2!1suk!2sua!4v1537880644717"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     <div class="footer__contact">
                         <div class="contact__line"></div>
                         <span>Connect with us</span>
@@ -218,7 +222,9 @@
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <script src="./js/slick.min.js"></script>
 <script src="./js/main.js"></script>
+<script>if (Hls.isSupported()) { var video1 = document.getElementById('video1'); var hls1 = new Hls(); hls1.loadSource('./src/dowload.mp4'); hls1.attachMedia(video1); hls1.on(Hls.Events.MANIFEST_PARSED, function () { video1.play(); }); } else if (video1.canPlayType('application/vnd.apple.mpegurl')) { video1.src = './src/download.mp4'; video1.addEventListener('canplay', function () { video1.play(); }); }</script>
 
 </html>
